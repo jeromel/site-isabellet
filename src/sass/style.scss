@@ -7,8 +7,8 @@ $grid-gutter-width: 40px !default;
 $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
-$brand-primary: #F14E95 !default;
-$brand-secondary: #118DF0 !default; 
+$brand-primary: #118DF0 !default;
+$brand-secondary: #fab3ed !default; 
 
 $brand-white: #fff;
 $brand-black: #000;
@@ -481,6 +481,10 @@ h1, h2, h3, h4, h5, h6, figure {
 		@media screen and (max-width: $screen-sm) {
 			margin-bottom: 10px;
 		}
+		a {
+			color: rgba($brand-white,.8);
+			text-decoration-line: underline;
+		}
 		h3{
 			font-size: 20px;
 			color: $brand-white;
@@ -490,13 +494,19 @@ h1, h2, h3, h4, h5, h6, figure {
 			text-transform: uppercase;
 			letter-spacing: 2px;
 		}
-		p,span{
+		p,span,li{
 			display: block;
 			color: rgba($brand-white,.8);
+			text-align: justify;
+  			text-justify: inter-word;
+		}
+		ul {
+			list-style-type: circle;
 		}
 		i{
 			color: rgba($brand-white,1);
-			font-size: 20px;
+			font-size: 30px;
+			padding-bottom: 1em;
 		}
 		.event-col{
 			width: 50%;
