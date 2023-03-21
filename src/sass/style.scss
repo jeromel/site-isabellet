@@ -1081,6 +1081,7 @@ form {
 			width: 150px;
 			height: 150px;
 			@include border-radius(50%);
+			background-color: #daeac7;
 		}
 		@media screen and (max-width: $screen-xs){
 			width: 100%;
