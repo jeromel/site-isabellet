@@ -887,6 +887,23 @@ form {
 				box-shadow: 0px 14px 30px -15px rgba(0,0,0,0.75)!important;
 			}
 		}
+		ul {
+			padding: 0;
+			margin: 0;
+			li {
+				padding: 0 0 0.5em 0;
+				margin: 0;
+				list-style: none;
+				color:rgba(197, 195, 195, 0.997);
+				a {
+					color:rgba(197, 195, 195, 0.997);
+					span {
+						text-decoration: underline;
+						text-decoration-thickness: 0.1rem;
+					}
+				}
+			}
+		}
 	}
 }
 #fh5co-counter {	
@@ -1378,27 +1395,6 @@ form {
 		}
 		.block {
 			display: block;
-		}
-	}
-}
-
-// Owl 
-.owl-carousel .owl-controls .owl-dot {
-	span {
-		background: lighten($brand-black, 90%);
-		&:hover, &:focus {
-			background: lighten($brand-black, 80%);
-		}
-	}
-	&:hover, &:focus {
-		span {
-			background: lighten($brand-black, 80%);
-		}
-	}
-	&.active {
-		span {
-			background: transparent;
-			border: 2px solid $brand-primary;
 		}
 	}
 }

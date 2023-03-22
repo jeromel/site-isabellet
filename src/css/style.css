@@ -881,6 +881,31 @@ form label {
   -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
   box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
 }
+#fh5co-header .display-tc ul,
+#fh5co-counter .display-tc ul,
+.fh5co-cover .display-tc ul {
+  padding: 0;
+  margin: 0;
+}
+#fh5co-header .display-tc ul li,
+#fh5co-counter .display-tc ul li,
+.fh5co-cover .display-tc ul li {
+  padding: 0 0 0.5em 0;
+  margin: 0;
+  list-style: none;
+  color: rgba(197, 195, 195, 0.997);
+}
+#fh5co-header .display-tc ul li a,
+#fh5co-counter .display-tc ul li a,
+.fh5co-cover .display-tc ul li a {
+  color: rgba(197, 195, 195, 0.997);
+}
+#fh5co-header .display-tc ul li a span,
+#fh5co-counter .display-tc ul li a span,
+.fh5co-cover .display-tc ul li a span {
+  text-decoration: underline;
+  text-decoration-thickness: 0.1rem;
+}
 
 #fh5co-counter {
   text-align: center;
@@ -1392,20 +1417,6 @@ form label {
 }
 #fh5co-footer .copyright .block {
   display: block;
-}
-
-.owl-carousel .owl-controls .owl-dot span {
-  background: #e6e6e6;
-}
-.owl-carousel .owl-controls .owl-dot span:hover, .owl-carousel .owl-controls .owl-dot span:focus {
-  background: #cccccc;
-}
-.owl-carousel .owl-controls .owl-dot:hover span, .owl-carousel .owl-controls .owl-dot:focus span {
-  background: #cccccc;
-}
-.owl-carousel .owl-controls .owl-dot.active span {
-  background: transparent;
-  border: 2px solid #118DF0;
 }
 
 #fh5co-offcanvas {
