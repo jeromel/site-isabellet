@@ -453,6 +453,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-counter .event-wrap li,
 #accompagnements .event-wrap li {
   display: list-item;
+  margin-top: 1.5em;
 }
 #fh5co-counter .event-wrap p, #fh5co-counter .event-wrap span, #fh5co-counter .event-wrap li,
 #accompagnements .event-wrap p,
@@ -792,6 +793,23 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-social-icons li a i {
   font-size: 20px;
+}
+
+.consultation ul {
+  padding: 0;
+  margin: 0;
+}
+.consultation ul li {
+  padding: 0 0 0 50px;
+  margin: 0 0 30px 0;
+  list-style: none;
+  position: relative;
+}
+.consultation ul li:before {
+  color: #118DF0;
+  position: absolute;
+  left: 0;
+  top: 0.05em;
 }
 
 .contact-info ul {

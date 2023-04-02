@@ -496,6 +496,8 @@ h1, h2, h3, h4, h5, h6, figure {
 		}
 		li {
 			display: list-item;
+			
+			margin-top: 1.5em;
 
 		}
 		p,span,li{
@@ -826,6 +828,26 @@ h1, h2, h3, h4, h5, h6, figure {
 	}
 }
 
+.consultation {
+	ul {
+		padding: 0;
+		margin: 0;
+		li {
+			padding: 0 0 0 50px;
+			margin: 0 0 30px 0;
+			list-style: none;
+			position: relative;
+			&:before {
+				color: $brand-primary;
+				position: absolute;
+				left: 0;
+				top: .05em;
+			
+			}
+			
+		}
+	}
+}
 .contact-info {
 	ul {
 		padding: 0;
