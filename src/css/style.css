@@ -101,11 +101,11 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0;
   padding: 0;
   line-height: 40px;
-  font-family: "Sacramento", Arial, serif;
+  font-family: "PT Serif", Arial, serif;
 }
 .fh5co-nav a {
   padding: 5px 10px;
-  color: #fff;
+  color: #118DF0;
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav .menu-1, .fh5co-nav .menu-2 {
@@ -126,7 +126,8 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 14px;
   padding: 30px 10px;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
+  color: #118DF0;
+  font-weight: 600;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -217,7 +218,13 @@ h1, h2, h3, h4, h5, h6, figure {
   box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
 }
 .fh5co-nav ul li.active > a {
-  color: #fff !important;
+  text-decoration: overline;
+  color: #118DF0 !important;
+  font-weight: 900;
+}
+
+#fh5co-event {
+  background-color: #118DF0;
 }
 
 #fh5co-counter,
@@ -276,7 +283,7 @@ h1, h2, h3, h4, h5, h6, figure {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(120, 120, 120, 0.8);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -470,6 +477,53 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 50%;
   float: left;
   margin-bottom: 30px;
+}
+
+.section-photo-person {
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #fff;
+  width: 160px;
+  height: 180px;
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  margin-left: -80px;
+  margin-top: 100px;
+  background-color: #999999;
+}
+@media screen and (max-width: 480px) {
+  .section-photo-person {
+    width: 160px;
+    height: 180px;
+    margin-top: 0px !important;
+    margin-bottom: 40px !important;
+    margin-left: 80px !important;
+  }
+}
+
+.section-image {
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #fff;
+  width: 320px;
+  height: 380px;
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  margin-left: -160px;
+  background-color: #999999;
+}
+@media screen and (max-width: 480px) {
+  .section-image {
+    width: 280px;
+    height: 380px;
+    margin-left: 20px !important;
+  }
 }
 
 #fh5co-counter {
@@ -787,7 +841,7 @@ form label {
   margin-bottom: 0px;
   font-size: 100px;
   line-height: 1.5;
-  font-family: "Sacramento", Arial, serif;
+  font-family: "PT Serif", Arial, serif;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h1,
@@ -958,6 +1012,12 @@ form label {
   /* words */
 }
 
+@media screen and (min-width: 768px) {
+  #fh5co-couple {
+    max-height: 10em;
+  }
+}
+
 #fh5co-testimonial,
 #fh5co-services,
 #fh5co-started,
@@ -1032,7 +1092,7 @@ form label {
   }
 }
 .couple-half h3 {
-  font-family: "Sacramento", Arial, serif;
+  font-family: "PT Serif", Arial, serif;
   color: #118DF0;
   font-size: 30px;
 }
@@ -1145,12 +1205,12 @@ form label {
   margin-bottom: 2em;
 }
 .fh5co-heading h2 {
-  font-size: 60px;
+  font-size: 32px;
   margin-bottom: 10px;
   line-height: 1.5;
   font-weight: bold;
   color: #118DF0;
-  font-family: "Sacramento", Arial, serif;
+  font-family: "PT Serif", Arial, serif;
 }
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {

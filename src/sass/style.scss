@@ -1,5 +1,5 @@
 $font-primary: 'Work Sans', Arial, sans-serif;
-$font-secondary: 'Sacramento', Arial, serif;
+$font-secondary: 'PT Serif', Arial, serif;
 
 
 // Overrides
@@ -19,6 +19,7 @@ $brand-body-color: #818892;
 $brand-selection-color: #f9f6f0;
 $brand-overlay-color: #3b3d40;
 $brand-bg-color: $brand-white;
+$brand-menu-link: $brand-primary;
 
 $input-border-focus:  $brand-primary !default;
 $form-group-margin-bottom:       30px !default;
@@ -160,6 +161,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	@media screen and (max-width: $screen-sm) {
 		padding: 20px 0;
 	}
+	
 	#fh5co-logo {
 		font-size: 40px;
 		margin: 0;
@@ -169,7 +171,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	}
 	a {
 		padding: 5px 10px;
-		color: $brand-white;
+		color: $brand-menu-link;
 	}
 	.menu-1, .menu-2 {
 		@media screen and (max-width: $screen-sm ) {
@@ -188,7 +190,8 @@ h1, h2, h3, h4, h5, h6, figure {
 				font-size: 14px;
 				padding: 30px 10px;
 				text-transform: uppercase;
-				color: rgba(255,255,255,.5);
+				color: $brand-menu-link;
+				font-weight: 600;
 				@include transition(.5s);
 				&:hover,&:focus, &:active {
 					color: rgba(255,255,255,1);
@@ -277,11 +280,16 @@ h1, h2, h3, h4, h5, h6, figure {
 			}
 			&.active {
 				> a {
-					color: $brand-white!important;
+					text-decoration:  overline;
+					color: $brand-menu-link !important;
+					font-weight: 900;
 				}
 			}
 		}
 	}
+}
+#fh5co-event {
+	background-color: $brand-primary;
 }
 // #fh5co-header,
 // #fh5co-counter,
@@ -343,7 +351,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background: rgba(0, 0, 0, .5);
+		background: rgba(120, 120, 120, .8);
 		@include transition(.5s);
 	}
 	&:hover {
@@ -513,6 +521,48 @@ h1, h2, h3, h4, h5, h6, figure {
 
 }
 
+.section-photo-person {
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	position: relative;
+	color: #fff;
+	width: 160px;
+	height: 180px;
+	line-height: 50px;
+	font-size: 1.4em;
+	text-align: center;
+	margin-left: -80px;
+	margin-top: 100px;
+	background-color: #999999;
+	@media screen and (max-width: $screen-xs) {
+		width: 160px;
+		height: 180px;
+		margin-top: 0px !important;
+		margin-bottom: 40px !important;
+		margin-left: 80px !important;
+	}
+}
+
+.section-image {
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	position: relative;
+	color: #fff;
+	width: 320px;
+	height: 380px;
+	line-height: 50px;
+	font-size: 1.4em;
+	text-align: center;
+	margin-left: -160px;
+	background-color: #999999;
+	@media screen and (max-width: $screen-xs) {
+		width: 280px;
+		height: 380px;
+		margin-left: 20px !important;
+	}
+}
 
 #fh5co-counter{
 	height: 600px;
@@ -974,6 +1024,11 @@ form {
     /* words */
 }
 
+#fh5co-couple {
+	@media screen and (min-width: $screen-sm) {
+		max-height: 10em;
+	}
+}
 #fh5co-testimonial,
 #fh5co-services,
 #fh5co-started,
@@ -1135,7 +1190,7 @@ form {
 		margin-bottom: 2em;
 	}
 	h2 {
-		font-size: 60px;
+		font-size: 32px;
 		margin-bottom: 10px;
 		line-height: 1.5;
 		font-weight: bold;
