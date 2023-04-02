@@ -479,7 +479,17 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-bottom: 30px;
 }
 
+.title-middle {
+  font-size: 60px !important;
+}
+@media screen and (max-width: 480px) {
+  .title-middle {
+    font-size: 2em !important;
+  }
+}
+
 .section-photo-person {
+  border-radius: 10px;
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -1013,7 +1023,7 @@ form label {
 }
 
 @media screen and (min-width: 768px) {
-  #fh5co-couple {
+  #presentation {
     max-height: 10em;
   }
 }
@@ -1023,7 +1033,7 @@ form label {
 #fh5co-started,
 #fh5co-footer,
 #accompagnements,
-#fh5co-couple,
+#presentation,
 #fh5co-gallery,
 .fh5co-section {
   padding: 7em 0;
@@ -1035,7 +1045,7 @@ form label {
   #fh5co-started,
   #fh5co-footer,
   #accompagnements,
-  #fh5co-couple,
+  #presentation,
   #fh5co-gallery,
   .fh5co-section {
     padding: 3em 0;
@@ -1044,6 +1054,22 @@ form label {
 
 .fh5co-section-gray {
   background: rgba(0, 0, 0, 0.04);
+}
+
+.margin-top-1 {
+  margin-top: 1em !important;
+}
+
+.margin-top-2 {
+  margin-top: 2em !important;
+}
+
+.margin-bottom-2 {
+  margin-bottom: 2em !important;
+}
+
+.margin-bottom-4 {
+  margin-bottom: 4em !important;
 }
 
 .couple-wrap {
