@@ -1738,9 +1738,16 @@ form {
 	  }
   }
   &.fh5co-nav-white {
+	border: 2px solid rgba($brand-black,.1);
+	border-radius: 5px;
+	background:rgba($brand-black,.2);
+	text-align: center;
+	margin-right: 10px;
+
   	> i {
   		color:$brand-white;
   		background: $brand-white;
+		
   		&::before, &::after {
   			background: $brand-white;
   		}
@@ -1786,7 +1793,7 @@ form {
   // top: 100px;
   // left: -100px;;
   z-index: 21;
-  padding: 6px 0 0 0;
+  padding: 2px 0 0 0;
   display: block;
   margin: 0 auto;
   display: none;

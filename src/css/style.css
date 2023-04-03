@@ -1731,6 +1731,13 @@ form label {
   left: 0;
   transition: all 0.2s ease-out;
 }
+.fh5co-nav-toggle.fh5co-nav-white {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-right: 10px;
+}
 .fh5co-nav-toggle.fh5co-nav-white > i {
   color: #fff;
   background: #fff;
@@ -1782,7 +1789,7 @@ form label {
   right: 0px;
   top: 10px;
   z-index: 21;
-  padding: 6px 0 0 0;
+  padding: 2px 0 0 0;
   display: block;
   margin: 0 auto;
   display: none;
