@@ -1587,7 +1587,7 @@ form label {
   position: absolute;
   z-index: 1901;
   width: 270px;
-  background: black;
+  background: white;
   top: 0;
   right: 0;
   top: 0;
@@ -1611,10 +1611,11 @@ form label {
   transform: translateX(0px);
 }
 #fh5co-offcanvas a {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 #fh5co-offcanvas a:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgb(0, 0, 0);
+  font-weight: 600;
 }
 #fh5co-offcanvas ul {
   padding: 0;
@@ -1638,7 +1639,7 @@ form label {
   right: 0px;
   content: "\e921";
   font-size: 20px;
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
