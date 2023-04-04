@@ -511,7 +511,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		}
 		i{
 			color: rgba($brand-white,1);
-			font-size: 30px;
+			
 			padding-bottom: 1em;
 		}
 		.event-col{
@@ -879,12 +879,18 @@ h1, h2, h3, h4, h5, h6, figure {
 				}
 			}
 			&.email {
+
+				@media screen and (max-width: $screen-sm) {
+					font-size: 14px;
+				}
+				
 				&:before {
 					font-family: 'FontAwesome';
 					font-size: 23px;
 					content: "\f0e0";
 				}
 			}
+			
 		}
 	}
 }
@@ -903,7 +909,7 @@ form {
 	.display-tc {
 		display: table-cell!important;
 		vertical-align: middle;
-		h1, h2 {
+		h1, h2, h3 {
 			margin: 0;
 			padding: 0;
 			color: rgba(255,255,255,1);
@@ -924,9 +930,18 @@ form {
 			font-size: 20px;
 			line-height: 1.5;
 			margin-bottom: 30px;
+			margin-top: 30px;
 			@media screen and (max-width: $screen-xs) {
 				font-size: 16px;
 			}
+
+			@media screen and (max-width: $screen-sm) {
+				margin-top: 80px;	
+			}
+		}
+		h3 {
+			font-size: 18px;
+			color: $brand-white;
 		}
 		.btn {
 			padding: 15px 20px;
@@ -1296,7 +1311,7 @@ form {
 		color: $brand-primary;
 		font-family: $font-secondary;
 		@media screen and (max-width: $screen-sm){
-			font-size: 40px;
+			font-size: 36px;
 		}
 	}
 	p {
