@@ -470,7 +470,6 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-counter .event-wrap i,
 #accompagnements .event-wrap i {
   color: white;
-  font-size: 30px;
   padding-bottom: 1em;
 }
 #fh5co-counter .event-wrap .event-col,
@@ -838,6 +837,16 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 23px;
   content: "\f095";
 }
+@media screen and (max-width: 480px) {
+  .contact-info ul li.email {
+    font-size: 11.5px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .contact-info ul li.email {
+    font-size: 14px;
+  }
+}
 .contact-info ul li.email:before {
   font-family: "FontAwesome";
   font-size: 23px;
@@ -854,11 +863,13 @@ form label {
   display: table-cell !important;
   vertical-align: middle;
 }
-#fh5co-header .display-tc h1, #fh5co-header .display-tc h2,
+#fh5co-header .display-tc h1, #fh5co-header .display-tc h2, #fh5co-header .display-tc h3,
 #fh5co-counter .display-tc h1,
 #fh5co-counter .display-tc h2,
+#fh5co-counter .display-tc h3,
 .fh5co-cover .display-tc h1,
-.fh5co-cover .display-tc h2 {
+.fh5co-cover .display-tc h2,
+.fh5co-cover .display-tc h3 {
   margin: 0;
   padding: 0;
   color: rgb(255, 255, 255);
@@ -891,11 +902,33 @@ form label {
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 @media screen and (max-width: 480px) {
   #fh5co-header .display-tc h2,
   #fh5co-counter .display-tc h2,
   .fh5co-cover .display-tc h2 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #fh5co-header .display-tc h2,
+  #fh5co-counter .display-tc h2,
+  .fh5co-cover .display-tc h2 {
+    margin-top: 80px;
+  }
+}
+#fh5co-header .display-tc h3,
+#fh5co-counter .display-tc h3,
+.fh5co-cover .display-tc h3 {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #fff;
+}
+@media screen and (max-width: 480px) {
+  #fh5co-header .display-tc h3,
+  #fh5co-counter .display-tc h3,
+  .fh5co-cover .display-tc h3 {
     font-size: 16px;
   }
 }
@@ -1294,7 +1327,7 @@ form label {
 }
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {
-    font-size: 40px;
+    font-size: 36px;
   }
 }
 .fh5co-heading p {
