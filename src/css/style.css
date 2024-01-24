@@ -95,6 +95,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .testimonial-panel .panel-heading {
   background-color: #ffcc80; /* Un orange doux pour compléter le jaune */
+  color: #333; /* Couleur de texte foncée pour un bon contraste */
   font-weight: bold; /* Texte en gras */
   text-align: center; /* Centrer le texte */
 }
