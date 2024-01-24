@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* =======================================================
 *
 * 	Template Style 
@@ -80,6 +81,50 @@ h1, h2, h3, h4, h5, h6, figure {
 .separator {
   border-bottom: 2px solid rgba(0, 0, 0, 0.4);
   margin-bottom: 80px;
+}
+
+.testimonial-panel {
+  background-color: #fff9e6; /* Un jaune lumineux et doux */
+  border: 1px solid #ddd; /* Bordure subtile */
+  border-radius: 4px; /* Coins arrondis */
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05); /* Ombre légère */
+  max-width: 600px; /* Définir une largeur maximale */
+  margin: 0 auto; /* Centrer le panel */
+  padding: 15px; /* Ajouter un peu d'espace à l'intérieur */
+}
+
+.testimonial-panel .panel-heading {
+  background-color: #ffcc80; /* Un orange doux pour compléter le jaune */
+  font-weight: bold; /* Texte en gras */
+  text-align: center; /* Centrer le texte */
+}
+
+.testimonial-quote {
+  font-style: italic; /* Italique pour la citation */
+  color: #555; /* Couleur de texte foncée */
+  margin-bottom: 15px; /* Marge en bas */
+  font-size: 0.9em; /* Réduire la taille du texte */
+}
+
+.testimonial-author {
+  text-align: right; /* Alignement à droite pour l'auteur */
+}
+
+.testimonial-panel .panel-body {
+  padding: 10px; /* Réduire le padding à l'intérieur du panel */
+}
+
+.testimonial-quote, .testimonial-author {
+  margin-bottom: 10px; /* Réduire la marge en bas de chaque élément */
+}
+
+.testimonial-panel .panel-body ul.testimonial-quote {
+  padding-left: 0; /* Retirer le padding par défaut */
+  list-style-position: inside; /* Mettre les puces à l'intérieur du flux du texte */
+}
+
+.testimonial-panel .panel-body ul.testimonial-quote li {
+  margin-left: 20px; /* Ajuster si nécessaire pour aligner avec le reste du texte */
 }
 
 .fh5co-nav {
