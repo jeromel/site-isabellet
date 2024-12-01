@@ -1132,6 +1132,7 @@ form label {
 #accompagnements,
 #presentation,
 #fh5co-gallery,
+#actualites-vittoz,
 .fh5co-section {
   padding: 7em 0;
   clear: both;
@@ -1144,9 +1145,71 @@ form label {
   #accompagnements,
   #presentation,
   #fh5co-gallery,
+  #actualites-vittoz,
   .fh5co-section {
     padding: 3em 0;
   }
+}
+
+#actualites-vittoz {
+  background-color: #fee6f2;
+}
+
+#actualites-vittoz .event-wrap {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background: rgba(204, 204, 204, 0.3);
+  padding: 30px;
+  width: 100%;
+  float: left;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+@media screen and (max-width: 768px) {
+  #actualites-vittoz .event-wrap {
+    margin-bottom: 10px;
+  }
+}
+#actualites-vittoz .event-wrap a {
+  text-decoration-line: underline;
+}
+#actualites-vittoz .event-wrap h3 {
+  font-size: 20px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#actualites-vittoz .event-wrap h4 {
+  font-size: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  padding-bottom: 20px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#actualites-vittoz .event-wrap p, #actualites-vittoz .event-wrap span {
+  display: block;
+}
+#actualites-vittoz .event-wrap li {
+  display: list-item;
+  margin-top: 1.5em;
+}
+#actualites-vittoz .event-wrap p, #actualites-vittoz .event-wrap span, #actualites-vittoz .event-wrap li {
+  text-align: justify;
+  text-justify: inter-word;
+}
+#actualites-vittoz .event-wrap ul {
+  list-style-type: circle;
+}
+#actualites-vittoz .event-wrap i {
+  font-size: 30px;
+  padding-bottom: 1em;
+}
+#actualites-vittoz .event-wrap .event-col {
+  width: 50%;
+  float: left;
+  margin-bottom: 30px;
 }
 
 #presentation .event-wrap {
