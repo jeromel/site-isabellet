@@ -8,7 +8,7 @@ $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
 $brand-primary: #118DF0 !default;
-$brand-secondary: #fab3ed !default; 
+$brand-secondary: #fee6f2 !default; 
 
 $brand-white: #fff;
 $brand-black: #000;
@@ -1137,11 +1137,81 @@ form {
 #accompagnements,
 #presentation,
 #fh5co-gallery,
+#actualites-vittoz,
 .fh5co-section {
 	padding: 7em 0;
 	clear: both;
 	@media screen and (max-width: $screen-sm) {
 		padding: 3em 0;
+	}
+}
+
+#actualites-vittoz  {
+	background-color: $brand-secondary;
+}
+
+#actualites-vittoz {
+	.event-wrap{
+		border: 2px solid rgba($brand-black,.3);
+		background:rgba($brand-gray,.3);
+		padding: 30px;
+		width: 100%;
+		float: left;
+		@include border-radius(4px);
+		@media screen and (max-width: $screen-sm) {
+			margin-bottom: 10px;
+		}
+		a {
+			// color: rgba($brand-white,.8);
+			text-decoration-line: underline;
+		}
+		h3{
+			font-size: 20px;
+			// color: $brand-white;
+			
+			display: block;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+		h4 {
+			font-size: 12px;
+			// color: $brand-white;
+			border-bottom: 1px solid rgba($brand-black,.5);
+			padding-bottom: 20px;
+
+			display: block;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+		p,span {
+			display: block;
+
+		}
+		li {
+			display: list-item;
+			
+			margin-top: 1.5em;
+
+		}
+		p,span,li{
+			// color: rgba($brand-white,.8);
+			text-align: justify;
+  			text-justify: inter-word;
+		}
+		
+		ul {
+			list-style-type: circle;
+		}
+		i{
+			// color: rgba($brand-white,1);
+			font-size: 30px;
+			padding-bottom: 1em;
+		}
+		.event-col{
+			width: 50%;
+			float: left;
+			margin-bottom: 30px;
+		}
 	}
 }
 
