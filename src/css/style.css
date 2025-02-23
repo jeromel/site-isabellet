@@ -1150,7 +1150,7 @@ form label {
   -ms-border-radius: 50%;
   border-radius: 50%;
   position: relative;
-  animation: pulse 1s ease infinite;
+  animation: pulse 0.5s ease infinite;
 }
 
 @keyframes pulse {
@@ -2212,6 +2212,14 @@ form label {
 
 .js .animate-box {
   opacity: 0;
+  transition: opacity 0.5s ease-in-out !important;
+}
+
+#contact .animate-box {
+  animation-delay: 0s !important; /* Supprime tout retard */
+  animation-duration: 0.3s !important; /* Réduit la durée */
+  opacity: 1 !important; /* S'assure que le contenu est visible immédiatement */
+  transform: none !important; /* Annule toute transformation d'entrée */
 }
 
 /*# sourceMappingURL=style.css.map */
