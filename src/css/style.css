@@ -128,6 +128,78 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-left: 20px; /* Ajuster si nécessaire pour aligner avec le reste du texte */
 }
 
+/* Appointment button */
+.appointment-container {
+  position: fixed;
+  top: 20vh; /* Ajuste la hauteur pour qu'il soit toujours visible en haut */
+  left: 2vw; /* Distance du bord gauche */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+}
+
+.appointment-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.appointment-button {
+  width: 60px;
+  height: 60px;
+  background-color: white; /* Cercle blanc pour meilleure visibilité */
+  color: #007bff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 24px;
+  border: 2px solid #007bff; /* Bordure bleue pour le contraste */
+}
+
+.appointment-button i {
+  color: #007bff;
+}
+
+.appointment-text {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #007bff;
+  font-weight: bold;
+  text-align: center;
+  background: white;
+  padding: 4px 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.appointment-link:hover .appointment-button,
+.appointment-link:hover .appointment-text {
+  background-color: #f1f1f1;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .appointment-container {
+    top: 15vh;
+    left: 4vw;
+  }
+  .appointment-button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .appointment-text {
+    font-size: 12px;
+    padding: 2px 6px;
+  }
+}
 .fh5co-nav {
   position: absolute;
   top: 0;
@@ -1078,7 +1150,7 @@ form label {
   -ms-border-radius: 50%;
   border-radius: 50%;
   position: relative;
-  animation: pulse 1s ease infinite;
+  animation: pulse 0.5s ease infinite;
 }
 
 @keyframes pulse {
@@ -2140,6 +2212,14 @@ form label {
 
 .js .animate-box {
   opacity: 0;
+  transition: opacity 0.5s ease-in-out !important;
+}
+
+#contact .animate-box {
+  animation-delay: 0s !important; /* Supprime tout retard */
+  animation-duration: 0.3s !important; /* Réduit la durée */
+  opacity: 1 !important; /* S'assure que le contenu est visible immédiatement */
+  transform: none !important; /* Annule toute transformation d'entrée */
 }
 
 /*# sourceMappingURL=style.css.map */
