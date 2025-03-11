@@ -1096,6 +1096,7 @@ form label {
 
 #fh5co-counter {
   text-align: center;
+  /* Ajustement spécifique pour smartphone */
 }
 #fh5co-counter .counter {
   font-size: 50px;
@@ -1116,21 +1117,27 @@ form label {
   }
 }
 #fh5co-counter .icon {
-  width: 70px;
-  height: 70px;
+  width: 4em; /* proportionnel à la taille de police parente */
+  height: 4em;
   text-align: center;
-  -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
-  margin-bottom: 30px;
+  box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.5);
+  margin-bottom: 1.5em;
 }
 #fh5co-counter .icon i {
-  height: 70px;
+  font-size: 2em; /* icône proportionnelle à la taille du conteneur */
+  line-height: 4em; /* alignement vertical centré */
 }
-#fh5co-counter .icon i:before {
-  display: block;
-  text-align: center;
-  margin-left: 3px;
+@media (max-width: 768px) {
+  #fh5co-counter .icon {
+    width: 10vw; /* proportionnel à la largeur de l'écran */
+    height: 10vw;
+    margin-bottom: 5vw;
+    box-shadow: 0 1vw 3vw -1vw rgba(0, 0, 0, 0.5);
+  }
+  #fh5co-counter .icon i {
+    font-size: 5vw;
+    line-height: 10vw;
+  }
 }
 
 .simply-countdown {
@@ -1273,10 +1280,6 @@ form label {
 }
 #actualites-vittoz .event-wrap ul {
   list-style-type: circle;
-}
-#actualites-vittoz .event-wrap i {
-  font-size: 30px;
-  padding-bottom: 1em;
 }
 #actualites-vittoz .event-wrap .event-col {
   width: 50%;
