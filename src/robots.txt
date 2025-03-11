@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap XML
+Sitemap: https://tardypriolet.fr/sitemap.xml
