@@ -1,3 +1,4 @@
 # site-isabelle-tardy-priolet
 
-0.8.2
+0.9.0
+
